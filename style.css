@@ -40,16 +40,33 @@ li strong {
     width: 800px;
     padding: 30px;
     margin-bottom: 20%;
-    transform: translate(45%, 20%);
-    -webkit-transform: translate(45%, 20%);
-    -moz-transform: translate(45%, 20%);
-    -ms-transform: translate(45%, 20%);
-    -o-transform: translate(45%, 20%);
+    transform: translate(45%, 10%);
+    -webkit-transform: translate(45%, 10%);
+    -moz-transform: translate(45%, 10%);
+    -ms-transform: translate(45%, 10%);
+    -o-transform: translate(45%, 10%);
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+    .main_contant {
+        width: 100%;
+        margin-bottom: 0;
+        transform: translate(1%, 0);
+        -webkit-transform: translate(1%, 0);
+        -moz-transform: translate(1%, 0);
+        -ms-transform: translate(1%, 0);
+        -o-transform: translate(1%, 0);
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
 }
 
 .main_contant .image {
@@ -171,6 +188,13 @@ li strong {
 
 .main_contant .nutrition table tr {
     display: block;
+    position: relative;
+}
+
+.main_contant .nutrition table tr th {
+    position: absolute;
+    left: 50%;
+    top: 0;
 }
 
 .main_contant .nutrition table tbody tr:not(:last-of-type) {
